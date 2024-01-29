@@ -15,7 +15,8 @@
     "leaflet": "1.0.0",
     "leaflet-draw": "0.4.12",
     "leaflet-draw-toolbar": "0.2.2",
-    "leaflet-toolbar": "0.3.0"
+    "leaflet-toolbar": "0.3.0",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@types/asciichart": "^1.5.8",
@@ -23,8 +24,7 @@
     "@types/node": "^20.11.5"
   },
   "scripts": {
-    "simulator": "ts-node src/simulator.ts --db ./data/db.json --exposure ./data/exposure.json",
-    "editor": "node ./node_modules/json-server/lib/bin.js ./data/db.json -s ./public -s ./node_modules",
-    "build": "npx tsc"
+    "simulator": "node node_modules/ts-node/dist/bin.js src/simulator.ts --db ./data/db.json --exposure ./data/exposure.json",
+    "editor": "node ./node_modules/json-server/lib/bin.js ./data/db.json -s ./public -s ./node_modules"
   }
 }
