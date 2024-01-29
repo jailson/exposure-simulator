@@ -1,0 +1,14 @@
+html,
+body {
+  height: 100%;
+}
+.leaflet-toolbar-icon .fa {
+  color: #000;
+}
+.leaflet-color-swatch {
+  background-color: #fff;
+}
+
+#map {
+    width: 100%; height: 100%;
+}

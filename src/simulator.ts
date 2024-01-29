@@ -40,6 +40,7 @@ const exposures = data.poi.map((poi: any) => ({
   exposures: data.soe.map((soe: any) => ({
     soe_id: soe.id,
     exposure: calculateExposure(poi, soe),
+    type: soe.type
   })),
 }));
 
