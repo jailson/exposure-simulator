@@ -1,0 +1,30 @@
+{
+  "name": "exposure-simulator",
+  "version": "0.0.1",
+  "author": "Jailson Brito",
+  "license": "MIT",
+  "dependencies": {
+    "asciichart": "^1.5.25",
+    "body-parser": "^1.20.2",
+    "commander": "^11.1.0",
+    "express": "^4.18.2",
+    "figlet": "^1.7.0",
+    "geolib": "^3.3.4",
+    "inquirer": "^9.2.12",
+    "json-server": "^1.0.0-alpha.22",
+    "leaflet": "1.0.0",
+    "leaflet-draw": "0.4.12",
+    "leaflet-draw-toolbar": "0.2.2",
+    "leaflet-toolbar": "0.3.0",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/asciichart": "^1.5.8",
+    "@types/figlet": "^1.5.8",
+    "@types/node": "^20.11.5"
+  },
+  "scripts": {
+    "simulator": "node node_modules/ts-node/dist/bin.js src/simulator.ts --db ./data/db.json --exposure ./data/exposure.json",
+    "editor": "node ./node_modules/json-server/lib/bin.js ./data/db.json -s ./public -s ./node_modules"
+  }
+}
